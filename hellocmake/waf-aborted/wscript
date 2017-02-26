@@ -1,0 +1,19 @@
+APPNAME = 'hellowaf'
+VERSION = '0.1'
+
+top = '.'
+out = 'build'
+
+def configure(ctx):
+    pass
+
+def build(ctx):
+    if ctx.cmd == 'clean':
+        clean()
+    else:
+        # compile
+        ctx(rule='')
+
+def clean():
+    # TODO: clean
+    pass

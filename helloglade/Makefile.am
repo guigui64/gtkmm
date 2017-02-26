@@ -1,0 +1,6 @@
+AUTOMAKE_OPTIONS=foreign
+AM_CXXFLAGS=-std=c++11
+bin_PROGRAMS=main
+main_SOURCES=src/main.cpp
+main_CPPFLAGS=$(GTKMM_CFLAGS)
+main_LDADD=$(GTKMM_LIBS)
